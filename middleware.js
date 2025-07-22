@@ -1,4 +1,6 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+// This middleware is used to protect routes that require authentication
+// This middleware will protect the routes that require authentication
 
 const isProtectedRoute = createRouteMatcher([
   "/dashboard(.*)?",
