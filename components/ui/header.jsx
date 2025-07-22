@@ -3,9 +3,9 @@ import React from "react";
 // This is the header component that will be used in the layout
 // It will display the sign-in button when the user is signed out
 
-const header = () => {
+const Header = () => {
   return (
-    <div>
+    <div className="fixed top-0 ">
         <SignedOut>
       <SignInButton />
     </SignedOut>
@@ -16,4 +16,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
