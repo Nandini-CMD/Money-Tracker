@@ -13,11 +13,11 @@ const Header = () => {
       <nav className="container mx-auto px-4 PY-4 flex items-center justify-between bg-gray-800 text-white p-4">
         <Link href="/">
         <Image
-          src="/logo.png"
+          src="/logo (2).png"
           alt="Logo"
-          width={50}
-          height={50}
-          className="h-12 w-auto object-contain"
+          width={100}
+          height={100}
+          className="h-12 w-auto object-contain rounded-full"
         />
         </Link>  
       
@@ -26,9 +26,10 @@ const Header = () => {
             <Link href="/dashboard">
             <Button variant="outline" className="bg-white text-gray-800 hover:bg-gray-100">
                 <LayoutDashboard size={18} className="mr-2 h-4 w-4" />
-                <span>Dashboard</span>
+                <span className="hidden md:inline">Dashboard</span>
             </Button>
             </Link>
+            
           </SignedIn>
           <SignedOut>
             <SignInButton forceRedirectUrl="/dashboard">
